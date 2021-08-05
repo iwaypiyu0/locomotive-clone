@@ -57,11 +57,11 @@ body {
 
 #key-visual-section .logo {
   background-image: url(logo.svg);
-  background-size: 30px 27px;
+  background-size: 60px 54px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 30px;
-  height: 27px;
+  width: 60px;
+  height: 54px;
   position: absolute;
   right: 0;
   bottom: 40px;

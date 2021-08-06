@@ -1,10 +1,14 @@
+:root {
+  --translate-timing-function: cubic-bezier(.215,.61,.355,1)
+}
+
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   background-color: #d3d3d3;
-  font-family: 'Roboto', sans-serif;
   padding: 0 40px;
   margin: 0;
 }
@@ -32,7 +36,7 @@ body {
   height: 84px;
   line-height: 84px;
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 700;
   position: absolute;
   top: 0;
   left: 0;
@@ -41,6 +45,24 @@ body {
   justify-content: space-between;
 }
 
+@keyframes key-visual-section-entry {
+  from {
+    transform: translateY(-60px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#key-visual-section header .left-title,
+#key-visual-section header .right-title {
+  animation-name: key-visual-section-entry;
+  animation-duration: 0.6s;
+  animation-timing-function: var(--translate-timing-function);
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+  
 #key-visual-section .main {
   width: 100%;
   position: absolute;

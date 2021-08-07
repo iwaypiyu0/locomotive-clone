@@ -1,4 +1,5 @@
 :root {
+  --maim-background: #d3d3d3;
   --translate-timing-function: cubic-bezier(.215,.61,.355,1)
 }
 
@@ -8,7 +9,7 @@
 }
 
 body {
-  background-color: #d3d3d3;
+  background-color: var(--maim-background);
   padding: 0 40px;
   margin: 0;
 }
@@ -24,6 +25,7 @@ body {
 #key-visual-section .split-version {
   color: #fff;
   letter-spacing: 0;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   display: flex;
@@ -71,10 +73,56 @@ body {
   padding: 35px 0;
 }
 
-#key-visual-section .title {
+#key-visual-section .title-1,
+#key-visual-section .title-2,
+#key-visual-section .split-version {
   font-size: 11.5vw;
   line-height: 0.9;
   margin: 0;
+}
+
+@keyframes key-visual-section-entryh1 {
+  from {
+    transform: translateY(100%) rotateX(-80deg);
+    transition: cubic-bezier(.215,.61,.355,1);
+    opacity: 0.6;
+  }
+}
+
+#key-visual-section .title-1 {
+  animation-delay: .1s;
+  animation-name: key-visual-section-entryh1;
+  animation-duration: .8s;
+  animation-timing-function: var(--translate-timing-function);
+  animation-iteration-count: 1;
+  transform-style: preserve-3d;
+}
+
+#key-visual-section .title-2 {
+  animation-delay: .15s;
+  animation-name: key-visual-section-entryh1;
+  animation-duration: .8s;
+  animation-timing-function: var(--translate-timing-function);
+  animation-iteration-count: 1;
+  transform-style: preserve-3d;
+}
+
+#key-visual-section .split-version {
+  animation-delay: .2s;
+  animation-name: key-visual-section-entryh1;
+  animation-duration: .8s;
+  animation-timing-function: var(--translate-timing-function);
+  animation-iteration-count: 1;
+  transform-style: preserve-3d;
+}
+
+@keyframes key-visual-section-entrylogo {
+  from {
+    transform: translateY(120px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 #key-visual-section .logo {
@@ -89,4 +137,14 @@ body {
   bottom: 40px;
   font-size: 0;
   outline: none;
+}
+
+  #key-visual-section .logo {
+  opacity: 1;
+  transform: none;
+  animation-fill-mode: backwards;
+  animation-delay: 600ms;
+  animation-duration: 600ms;
+  animation-name: key-visual-section-entrylogo;
+  animation-timing-function: var(--translate-timing-function);
 }

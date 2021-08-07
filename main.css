@@ -56,7 +56,8 @@ body {
   }
 }
 
-#key-visual-section header .left-title {
+#key-visual-section header .left-title,
+#key-visual-section header .right-title {
   animation-name: key-visual-section-entry;
   animation-duration: 0.6s;
   animation-timing-function: var(--translate-timing-function);
@@ -65,12 +66,7 @@ body {
 }
 
 #key-visual-section header .right-title {
-  animation-name: key-visual-section-entry;
   animation-delay: .1s;
-  animation-duration: 0.6s;
-  animation-timing-function: var(--translate-timing-function);
-  animation-iteration-count: 1;
-  animation-fill-mode: backwards;
 }
 
 #key-visual-section .main {

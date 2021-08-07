@@ -75,6 +75,7 @@ body {
   left: 0;
   bottom: 0;
   padding: 35px 0;
+  perspective: 600px;
 }
 
 #key-visual-section .title-1,
@@ -88,40 +89,32 @@ body {
 @keyframes key-visual-section-entry-title {
   from {
     transform: translateY(100%) rotateX(-80deg);
-    opacity: 0.6;
+    opacity: .6;
   }
-  to {
-    transform: rotateX(0deg);
-  }
+}
+
+#key-visual-section .title-1,
+#key-visual-section .title-2,
+#key-visual-section .split-version {
+  font-weight: 500;
+  animation-name: key-visual-section-entry-title;
+  animation-duration: .8s;
+  animation-timing-function: var(--translate-timing-function);
+  animation-iteration-count: 1;
+  transform-style: preserve-3d;
+  animation-fill-mode: backwards;
 }
 
 #key-visual-section .title-1 {
-  font-weight: 500;
   animation-delay: .1s;
-  animation-name: key-visual-section-entry-title;
-  animation-duration: .8s;
-  animation-timing-function: var(--translate-timing-function);
-  animation-iteration-count: 1;
-  transform-style: preserve-3d;
 }
 
 #key-visual-section .title-2 {
-  font-weight: 500;
   animation-delay: .2s;
-  animation-name: key-visual-section-entry-title;
-  animation-duration: .8s;
-  animation-timing-function: var(--translate-timing-function);
-  animation-iteration-count: 1;
-  transform-style: preserve-3d;
 }
 
 #key-visual-section .split-version {
   animation-delay: .3s;
-  animation-name: key-visual-section-entry-title;
-  animation-duration: .8s;
-  animation-timing-function: var(--translate-timing-function);
-  animation-iteration-count: 1;
-  transform-style: preserve-3d;
 }
 
 @keyframes key-visual-section-entry-logo {

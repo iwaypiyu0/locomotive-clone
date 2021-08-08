@@ -89,7 +89,7 @@ body {
 @keyframes key-visual-section-entry-title {
   from {
     transform: translateY(100%) rotateX(-80deg);
-    opacity: .6;
+    opacity: 0;
   }
 }
 

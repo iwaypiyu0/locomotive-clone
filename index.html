@@ -6,6 +6,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" 
+     integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer">
+    </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" 
+     integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer">
+    </script>
   </head>
   <body>
     <section id="key-visual-section">
@@ -14,18 +24,54 @@
         <span class="right-title">tatalag!</span>
       </header>
       <div class="main">
-        <h1 class="title-1">Cahamu</h1>
-        <h2 class="title-2">Indigenous</h2>
-        <p class="title split-version">
-          <span>v</span>
-          <span>1</span>
-          <span>.</span>
-          <span>0</span>
+       <div class="title-warpper">
+         <h1 class="title-1">Cahamu</h1>
+       </div>
+       <div class="title-warpper">
+         <h2 class="title-2">Indigenous</h2>
+       </div>
+       <div class="title-warpper">
+         <p class="title split-version">
+           <span>v</span>
+           <span>1</span>
+           <span>.</span>
+           <span>0</span>
         </p>
+       </div>
       </div>
-      <a class="logo" href="/">
-        cahamu.com
-      </a>
+      <div class="logo-wrapper">
+        <a class="logo" href="/">
+         cahamu.com
+       </a>
+      </div>
     </section>
+ 
+    
+    <section id="outline-section">
+      <div class="borderline">
+      </div>
+      <div class="summary">
+        <div class="text">A simple scroll library used by developers at Locomotive. Built as a layer on top of ayamflow's virtual-scroll, it provides smooth scrolling with support for parallax effects, toggling classes, and triggering event listeners when elements are in the viewport.</div>
+        <div class="list">
+          <span class="list1">01. SPEED CONTROL</span>
+          <br>
+          <span class="listline"></span>
+          <br>
+          <span class="list2">02. SCROLL DIRECTION</span>
+          <br>
+          <span class="listline"></span>
+          <br>
+          <span class="list3">03. LERP EFFECT</span>
+          <br>
+          <span class="listline"></span>
+          <br>
+          <span class="list4">04. FIXED ELEMENTS</span>
+          <br>
+          <span class="listline"></span>
+      </div>
+  
+    </section>
+
+    <script src="main.js"></script>
   </body>
 </html>

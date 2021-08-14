@@ -212,35 +212,32 @@ body {
   font-size: 1.3vw;
   font-weight: 500;
   line-height: 1.5;
-  margin: 5px 120px 5px 5px;
+  margin: 0 10% 0 0;
   flex: 1;
   flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
   flex-basis: 200px;
+  align-self: auto;
  }
 
 
  #outline-section .list {
   font-size: 2vw;
   font-weight: 500;
-  line-height: 0.8;
-  margin: 5px 5px 5px 5px;
+  line-height: 1;
   flex-grow: 3;
   flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  flex-direction: column;
   flex-basis: 500px;
+  flex-direction: column;
  }
 
- #outline-section .list1,
- #outline-section .list2,
- #outline-section .list3,
- #outline-section .list4 {
+ #outline-section .listline {
   display: inline-flex;
   flex-direction: column;
   border-bottom: solid #272727 1px;
-  padding-bottom: 2%;
+  margin: 2% 0;
   width: 100%;
  }
+
+ #outline-section .listicon {
+  float:right;
+}

@@ -209,13 +209,13 @@ body {
  }
 
  #outline-section .text {
-  font-size: 1.3vw;
+  font-size: 1.4vw;
   font-weight: 500;
   line-height: 1.5;
   margin: 0 10% 0 0;
   flex: 1;
   flex-shrink: 1;
-  flex-basis: 200px;
+  flex-basis: 230px;
   align-self: auto;
  }
 
@@ -226,7 +226,7 @@ body {
   line-height: 1;
   flex-grow: 3;
   flex-shrink: 1;
-  flex-basis: 500px;
+  flex-basis: 300px;
   flex-direction: column;
  }
 
@@ -239,5 +239,6 @@ body {
  }
 
  #outline-section .listicon {
+  font-size: 1.5vw;
   float:right;
 }

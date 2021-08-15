@@ -82,6 +82,7 @@ body {
 #key-visual-section .title-2,
 #key-visual-section .split-version {
   font-size: 11.5vw;
+  font-weight: 500;
   line-height: 0.9;
   margin: 0;
 }
@@ -97,10 +98,7 @@ body {
   }
 }
 
-#key-visual-section .title-1,
-#key-visual-section .title-2,
-#key-visual-section .split-version {
-  font-weight: 500;
+#key-visual-section .title-warpper {
   animation-name: key-visual-section-entry-title;
   animation-duration: .8s;
   animation-timing-function: var(--translate-timing-function);
@@ -154,48 +152,20 @@ body {
   animation-timing-function: var(--translate-timing-function);
 }
 
+#key-visual-section .divider {
+  width: 100%;
+  height: 1px;
+  align-items: center;
+  position: absolute;
+  bottom: -30px;
+  margin: 0;
+  border-top: solid #272727 1px;
+}
+
 #outline-section {
   width: 100%;
   height: 200vh; 
   display: block;
-}
-
-#outline-section .borderline {
-  width: 95%;
-  height: 1px;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  border-top: solid #272727 1px;
-}
-
-@keyframes borderline-entry {
-  from {
-    transform: scaleX(0)  
-  }
-  to {
-    transform: scaleX(1)  
-  }
-}
-
-#outline-section .borderline {
-  animation-name: borderline-entry;
-  animation-duration: .6s;
-  animation-timing-function: var(--translate-timing-function);
-  animation-iteration-count: 1;
-  animation-fill-mode: backwards;
-  animation-delay: 1s;
-}
-
-#outline-section .borderline {
-  width: 95%;
-  height: 1px;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  border-top: solid #272727 1px;
 }
 
  #outline-section .summary {
@@ -218,7 +188,6 @@ body {
   flex-basis: 230px;
   align-self: auto;
  }
-
 
  #outline-section .list {
   font-size: 2vw;

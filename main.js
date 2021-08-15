@@ -48,9 +48,13 @@ const splitTextElements = document.querySelectorAll('#key-visual-section .split-
        case 1:
          return '-=30vh';  
        case 2:
-         return '-=5vh';
+         return '-=10vh';
        case 3:
-         return '-=23vh';    
+         return '-=20vh'; 
+       case 4:
+          return '-=25vh';
+       case 5:
+          return '-=8vh';    
      }
    },
    scrollTrigger: {

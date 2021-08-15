@@ -142,7 +142,7 @@ body {
   outline: none;
 }
 
-  #key-visual-section .logo {
+#key-visual-section .logo {
   opacity: 1;
   transform: none;
   animation-fill-mode: backwards;
@@ -154,7 +154,6 @@ body {
 
 #key-visual-section .divider {
   width: 100%;
-  height: 1px;
   align-items: center;
   position: absolute;
   bottom: -30px;
@@ -168,46 +167,87 @@ body {
   display: block;
 }
 
- #outline-section .summary {
+#outline-section .summary {
   padding: 60px 0px;
   width: 100%;
   display: inline-flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
- }
+  justify-content: space-between;
+}
 
- #outline-section .text {
+#outline-section .text {
   font-size: 1.4vw;
   font-weight: 500;
   line-height: 1.5;
   margin: 0 10% 0 0;
-  flex: 1;
-  flex-shrink: 1;
+  flex-grow: 1;
   flex-basis: 230px;
   align-self: auto;
- }
+}
 
- #outline-section .list {
+#outline-section .list {
   font-size: 2vw;
   font-weight: 500;
-  line-height: 1;
+  line-height: 2;
+  align-items: left;
+  justify-content: space-between;
   flex-grow: 3;
-  flex-shrink: 1;
   flex-basis: 300px;
   flex-direction: column;
- }
+}
 
- #outline-section .listline {
-  display: inline-flex;
+#outline-section .listline1,
+#outline-section .listline2,
+#outline-section .listline3,
+#outline-section .listline4 {
+  width: 100%;
+  position: relative;
+  display: flex;
   flex-direction: column;
   border-bottom: solid #272727 1px;
-  margin: 2% 0;
-  width: 100%;
- }
+  transform-origin: center left;
+}
 
- #outline-section .listicon {
+#outline-section .listicon {
   font-size: 1.5vw;
-  float:right;
+  float: right;
+}
+
+#outline-section .list :hover{
+ color: #FFFFFF;
+ cursor: pointer
+}
+
+@keyframes list-entry {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#outline-section .list1,
+#outline-section .list2,
+#outline-section .list3,
+#outline-section .list4 {
+  animation-name: list-entry;
+  animation-duration: .6s;
+  animation-timing-function: var(--translate-timing-function);
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+
+#outline-section .list2 {
+  animation-delay: .15s;
+}
+
+#outline-section .list3 {
+  animation-delay: .3s;
+}
+
+#outline-section .list4 {
+  animation-delay: .45s;
 }

@@ -72,3 +72,55 @@ gsap.fromTo(document.querySelector('#key-visual-section .divider'), {
     scrub: 1,
   },
 });
+
+gsap.fromTo(document.querySelector('#outline-section .listline1'), {
+  scaleX: 0,
+}, {
+  scaleX: 1,
+  scrollTrigger: {
+    trigger: '#outline-section .listline1',
+    toggleActions: 'restart pause reverse pause',
+    start: '20px 85%',
+    end: 'bottom bottom',
+    scrub: 1.2,
+  },
+});
+
+gsap.fromTo(document.querySelector('#outline-section .listline2'), {
+  scaleX: 0,
+}, {
+  scaleX: 1,
+  scrollTrigger: {
+    trigger: '#outline-section .listline2',
+    toggleActions: 'restart pause reverse pause',
+    start: '20px 85%',
+    end: 'bottom bottom',
+    scrub: 1.2,
+  },
+});
+
+gsap.fromTo(document.querySelector('#outline-section .listline3'), {
+  scaleX: 0,
+}, {
+  scaleX: 1,
+  scrollTrigger: {
+    trigger: '#outline-section .listline3',
+    toggleActions: 'restart pause reverse pause',
+    start: '20px 85%',
+    end: 'bottom bottom',
+    scrub: 1.2,
+  },
+});
+
+gsap.fromTo(document.querySelector('#outline-section .listline4'), {
+  scaleX: 0,
+}, {
+  scaleX: 1,
+  scrollTrigger: {
+    trigger: '#outline-section .listline4',
+    toggleActions: 'restart pause reverse pause',
+    start: '20px 85%',
+    end: 'bottom bottom',
+    scrub: 1.2,
+  },
+});

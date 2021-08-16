@@ -1,5 +1,5 @@
 :root {
-  --maim-background: #c6c8ce;
+  --maim-background: #AA6F21;
   --translate-timing-function: cubic-bezier(.215,.61,.355,1)
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 #key-visual-section .split-version {
-  color: #fff;
+  color: #FEDC1B;
   letter-spacing: 0;
   font-weight: 500;
   margin: 0;
@@ -33,7 +33,13 @@ body {
   justify-content: flex-start;
 }
 
+#key-visual-section .title-2 {
+  color: #15BAB1;
+}
+
+
 #key-visual-section header {
+  color: #FEDC1B;
   width: 100%;
   height: 84px;
   line-height: 84px;
@@ -121,7 +127,7 @@ body {
 
 @keyframes key-visual-section-entry-logo {
   from {
-    transform: translateY(100px);
+    transform: translateY(200px);
   }
   to {
     transform: translateY(0);
@@ -130,11 +136,11 @@ body {
 
 #key-visual-section .logo {
   background-image: url(logo.svg);
-  background-size: 60px 54px;
+  background-size: 92px 80px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 60px;
-  height: 54px;
+  width: 92px;
+  height: 80px;
   position: absolute;
   right: 0;
   bottom: 40px;

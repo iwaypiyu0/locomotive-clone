@@ -52,9 +52,7 @@ const splitTextElements = document.querySelectorAll('#key-visual-section .split-
        case 3:
          return '-=20vh'; 
        case 4:
-          return '-=25vh';
-       case 5:
-          return '-=8vh';    
+          return '-=25vh';  
      }
    },
    scrollTrigger: {

@@ -44,11 +44,11 @@ const splitTextElements = document.querySelectorAll('#key-visual-section .split-
    y: (index) => {
      switch (index) {
        case 0:
-         return '-=15vh';
+         return '-=26vh';
        case 1:
-         return '-=30vh';  
+         return '-=42vh';  
        case 2:
-         return '-=10vh';
+         return '-=18vh';
        case 3:
          return '-=20vh'; 
        case 4:

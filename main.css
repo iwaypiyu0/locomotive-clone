@@ -200,6 +200,7 @@ body {
   flex-grow: 3;
   flex-basis: 300px;
   flex-direction: column;
+  list-style: none;
 }
 
 #outline-section .listline1,
@@ -235,25 +236,30 @@ body {
   }
 }
 
-#outline-section .list1,
-#outline-section .list2,
-#outline-section .list3,
-#outline-section .list4 {
+#outline-section .list .list-entry {
   animation-name: list-entry;
+  animation-fill-mode: backwards;
   animation-duration: .6s;
   animation-timing-function: var(--translate-timing-function);
   animation-iteration-count: 1;
-  animation-fill-mode: backwards;
+}
+
+#outline-section .list1 {
+animation-delay: .1s;
+animation-fill-mode: backwards;
 }
 
 #outline-section .list2 {
-  animation-delay: .15s;
+  animation-delay: .3s;
+  animation-fill-mode: backwards;
 }
 
 #outline-section .list3 {
-  animation-delay: .3s;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
 }
 
 #outline-section .list4 {
-  animation-delay: .45s;
+  animation-delay: .7s;
+  animation-fill-mode: backwards;
 }

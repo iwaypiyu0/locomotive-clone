@@ -126,3 +126,20 @@ gsap.fromTo(document.querySelector('#outline-section .listline4'), {
     scrub: 1.2,
   },
 });
+
+window.addEventListener('scroll', () =>{
+  const ListEntry =document.querySelector('#outline-section .list1');
+  const ListEntry2 =document.querySelector('#outline-section .list2');
+  const ListEntry3 =document.querySelector('#outline-section .list3');
+  const ListEntry4 =document.querySelector('#outline-section .list4');
+
+  if (window.scrollY >= 200) {
+    ListEntry.classList.add('list-entry');
+    ListEntry2.classList.add('list-entry');
+    ListEntry3.classList.add('list-entry');
+    ListEntry4.classList.add('list-entry');
+  }
+  else {
+    console.log('original')
+  }
+}, false);

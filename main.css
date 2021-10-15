@@ -1,5 +1,5 @@
 :root {
-  --maim-background: #AA6F21;
+  --main-background: #AA6F21;
   --translate-timing-function: cubic-bezier(.215,.61,.355,1)
 }
 
@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: var(--maim-background);
+  background-color: var(--main-background);
   padding: 0 50px;
   margin: 0;
 }
